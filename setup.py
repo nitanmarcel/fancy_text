@@ -7,12 +7,12 @@ if not sys.version_info[0] == 3:
 
 setup(
    name='fancy_text',
-   version='1.0',
+   version='2.0',
    description='Generate fancy text',
    author='Marcel Alexandru Nitan',
    author_email='nitan.marcel@gmail.com',
    license='MIT',
    packages=['fancy_text'],
-   url= '',
+   url= 'https://github.com/nitanmarcel/fancy_text',
    keyords = ['fancy', 'fancy_text', 'filter'],
 )

@@ -119,4 +119,63 @@ class fancy(object):
         pattern = re.compile(r'(' + '|'.join(fancy_light.keys()) + r')')
         result = pattern.sub(lambda x: fancy_light[x.group()], text)
         return(result)
+
+    def box(text):
+        fancy_box = { 
+                    'a' : '\uD83C\uDD70'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'b' : '\uD83C\uDD71'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'c' : '\uD83C\uDD72'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'd' : '\uD83C\uDD73'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'e' : '\uD83C\uDD74'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'f' : '\uD83C\uDD75'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'g' : '\uD83C\uDD76'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'h' : '\uD83C\uDD77'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'i' : '\uD83C\uDD78'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'j' : '\uD83C\uDD79'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'k' : '\uD83C\uDD7A'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'l' : '\uD83C\uDD7B'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'm' : '\uD83C\uDD7C'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'n' : '\uD83C\uDD7D'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'o' : '\uD83C\uDD7E'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'p' : '\uD83C\uDD7F'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'q' : '\uD83C\uDD80'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'r' : '\uD83C\uDD81'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    's' : '\uD83C\uDD82'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    't' : '\uD83C\uDD83'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'u' : '\uD83C\uDD84'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'v' : '\uD83C\uDD85'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'w' : '\uD83C\uDD86'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'x' : '\uD83C\uDD87'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'y' : '\uD83C\uDD88'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'z' : '\uD83C\uDD89'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'A' : '\uD83C\uDD70'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'B' : '\uD83C\uDD71'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'C' : '\uD83C\uDD72'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'D' : '\uD83C\uDD73'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'E' : '\uD83C\uDD74'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'F' : '\uD83C\uDD75'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'G' : '\uD83C\uDD76'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'H' : '\uD83C\uDD77'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'I' : '\uD83C\uDD78'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'J' : '\uD83C\uDD79'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'K' : '\uD83C\uDD7A'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'L' : '\uD83C\uDD7B'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'M' : '\uD83C\uDD7C'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'N' : '\uD83C\uDD7D'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'O' : '\uD83C\uDD7E'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'P' : '\uD83C\uDD7F'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'Q' : '\uD83C\uDD80'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'R' : '\uD83C\uDD81'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'S' : '\uD83C\uDD82'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'T' : '\uD83C\uDD83'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'U' : '\uD83C\uDD84'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'V' : '\uD83C\uDD85'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'W' : '\uD83C\uDD86'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'X' : '\uD83C\uDD87'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'Y' : '\uD83C\uDD88'.encode('utf-16', 'surrogatepass').decode('utf-16'),
+                    'Z' : '\uD83C\uDD89'.encode('utf-16', 'surrogatepass').decode('utf-16')
+                }
+        pattern = re.compile(r'(' + '|'.join(fancy_box.keys()) + r')')
+        result = pattern.sub(lambda x: fancy_box[x.group()], text)
+        return result
         

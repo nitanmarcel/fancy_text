@@ -18,3 +18,7 @@ pip install fancy_text
 𝕿𝖍𝖎𝖘 𝖎𝖘 𝖘𝖔 𝖋𝖆𝖓𝖈𝖞
 ```
 
+>>> print(fancy.box(text))
+🆃🅷🅸🆂 🅸🆂 🆂🅾 🅵🅰🅽🅲🆈
+```
+
