@@ -178,4 +178,64 @@ class fancy(object):
         pattern = re.compile(r'(' + '|'.join(fancy_box.keys()) + r')')
         result = pattern.sub(lambda x: fancy_box[x.group()], text)
         return result
+
+    def sorcerer(text):
+        fancy_sorcerer = {
+        'a' : '\u01DF',
+        'b' : '\u026E',
+        'c' : '\u0188',
+        'd' : '\u0256',
+        'e' : '\u025B',
+        'f' : '\u0284',
+        'g' : '\u0262',
+        'h' : '\u0266',
+        'i' : '\u0268',
+        'j' : '\u029D',
+        'k' : '\u04C4',
+        'l' : '\u029F',
+        'm' : '\u028D',
+        'n' : '\u057C',
+        'o' : '\u0585',
+        'p' : '\u0584',
+        'q' : '\u0566',
+        'r' : '\u0280',
+        's' : '\u0586',
+        't' : '\u0236',
+        'u' : '\u028A',
+        'v' : '\u028B',
+        'w' : '\u0561',
+        'x' : '\u04FC',
+        'y' : '\u028F',
+        'z' : '\u0290',
+        'A' : '\u01DF',
+        'B' : '\u026E',
+        'C' : '\u0188',
+        'D' : '\u0256',
+        'E' : '\u025B',
+        'F' : '\u0284',
+        'G' : '\u0262',
+        'H' : '\u0266',
+        'I' : '\u0268',
+        'J' : '\u029D',
+        'K' : '\u04C4',
+        'L' : '\u029F',
+        'M' : '\u028D',
+        'N' : '\u057C',
+        'O' : '\u0585',
+        'P' : '\u0584',
+        'Q' : '\u0566',
+        'R' : '\u0280',
+        'S' : '\u0586',
+        'T' : '\u0236',
+        'U' : '\u028A',
+        'V' : '\u028B',
+        'W' : '\u0561',
+        'X' : '\u04FC',
+        'Y' : '\u028F',
+        'Z' : '\u0290'
+
+    }
+        pattern = re.compile(r'(' + '|'.join(fancy_sorcerer.keys()) + r')')
+        result = pattern.sub(lambda x: fancy_sorcerer[x.group()], text)
+        return(result)
         
