@@ -28,5 +28,9 @@ pip install -e fancy_text/
 
 >>> print(fancy.box(text))
 🆃🅷🅸🆂 🅸🆂 🆂🅾 🅵🅰🅽🅲🆈
+
+>>> print(fancy.sorcerer(text))
+ȶɦɨֆ ɨֆ ֆօ ʄǟռƈʏ
+
 ```
 
